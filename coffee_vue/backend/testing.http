@@ -1,0 +1,22 @@
+get http://localhost:1521/
+
+###
+get http://localhost:3000/h
+
+###
+get http://localhost:3000/qs?p1=aa&p2=bb
+
+###
+post http://localhost:3000/h
+#json형식으로 요청
+Content-Type: application/json; charset=UTF-8
+#body에 담기 위해선 한줄 띄움
+
+{
+    "name":"이름입니다.",
+    "age": 11
+}
+
+
+###
+get http://localhost:1521/list
